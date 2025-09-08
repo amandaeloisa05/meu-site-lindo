@@ -4,83 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site lindo</title>
+    <style>
+        /* Estilo do corpo da página */
+        .corpo {
+            background-color: #FFB6C1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Container principal */
+        .todoConteudo {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            border: black solid 2px;
+            margin: 400px 400px 400px 400px;
+            align-items: center;
+            position: relative;
+        }
+        /* Cabeçalho com imagens */
+        .imagens {
+            display: inline-flex;
+            border-color: #FFB6C1;
+            align-self: first baseline;
+            margin-top: 20px;
+            position: absolute;
+            border: solid pink 4px;
+        }
+        /* Formulário de contato */
+        .formulario {
+            border: solid black 2px;
+            padding: 10px;
+            background-color: #FFD1DC;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            margin-top: 250px;
+        }
+        /* Botão do formulário */
+        .botao {
+            background-color: #FF7F7F;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        /* Estilo do vídeo */
+        .video {
+            margin-top: 250px;
+            border: solid pink 4px;
+            margin-left: 10px;
+        }
+        /* Estilo da tabela */
+        .tabela {
+            border: solid pink 4px;
+            align-content: center;
+            width: 400px;
+            text-align: center;
+            border-collapse: collapse; 
+        }
+        /* Grade rosa na tabela */
+        .tabela th, .tabela td {
+            border: 2px solid pink; 
+            padding: 8px;
+        }
+        /* Links do rodapé */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            bottom: 0;
+        }
+        /* Container para vídeo e formulário lado a lado */
+        .videoEForms {
+            display: flex;
+            gap: 20px; 
+            align-items: flex-start;
+        }
+        /* Estilo do áudio */
+        .audio {
+            display: flex;
+            margin-top: 30px;
+            background-color: #FFB6C1;
+            border-radius: 10px;
+            padding: 8px;
+            width: 230px;
+        }
+        /* Container para listas e tabela lado a lado */
+        .listaETabela {
+            display: flex;
+            gap: 40px; 
+            align-items: flex-start;
+            margin-top: 30px;;
+        }
+        /* Destaques em negrito e centralizados */
+        .destaque {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        /* Introdução em negrito, centralizada e sublinhada */
+        #introducao {
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* Estilo para a div dos Backyardigans */
+        .estiloDeDiv {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            text-decoration:line-through;
+            margin: auto;
+        }        
+    </style>
 </head>
 <body class="corpo">
-    <header>
-        <img src="img/cupcake.png" alt="cupcakes da kuromi" height="200px" width="200px">
-        <img src="img/briga.png" alt="cupcakes brigando" height="200px" width="200px">
-        <img src="img/cinamonroll.png" alt="cinamonroll parando a briga" height="200px" width="200px">
-    </header>
-    <main>
-        <video src="/video/video.mp4" controls width="420px" height="400px" poster="img/foto_video.png"></video>
-        <audio controls>
-            <source src="/audio/audio.mp3" type="audio/mp3">
-            <source src="/audio/audio2.ogg" type="audio/ogg">
-            O seu navegador não suporta audio
-        </audio>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome"><br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email"><br><br>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem"></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-        <ol>
-            <li>Maçã</li>
-            <li>Uva</li>
-            <li>Melancia</li>
-        </ol>
-        <ul>
-            <li>Laranja</li>
-            <li>Mamão</li>
-            <li>Romã</li>
-        </ul>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome:</th>
-                    <th>Altura:</th>
-                    <th>Peso:</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hello Kitty</td>
-                    <td>Cinco maçãs</td>
-                    <td>Três maçãs</td>
-                </tr>
-                <tr>
-                    <td>Cinamonroll</td>
-                    <td>21,5 cm</td>
-                    <td>59 g</td>
-                </tr>
-                <tr>
-                    <td>Kuromi</td>
-                    <td>20 cm</td>
-                    <td>100 g</td>
-                </tr>
-                <tr>
-                    <td>Keroppi</td>
-                    <td>2 pés</td>
-                    <td>1 kg</td>
-                </tr>
-            </tbody>
-        </table>
-        <p id="introducao">Bem vindo ao site :)</p>
-        <p class="destaque">Pra comer um cupcake sem se sujar você tem que rosquear a parte de baixo e colocar em cima do glacê pra virar um sanduíche.</p>
-        <p class="destaque">Ninjas comem macarrão.</p>
-        <div class="estiloDeDiv">
-            <h3>Backyardigans</h3>
-            <p>O Pablo é o melhor personagem.</p>
-            <p>O melhor episódio é o de fazer chá.</p>
-        </div>
-    </main>
-    <footer>
-        <a href="https://www.google.com">Google</a>
-        <a href="https://longdogechallenge.com"><img src="img/pucca-hellokitty.png" alt="pucca e hello kitty" width="200px" height="200px"></a>
-        <a href="" target="_blank">Blank</a>
-    </footer>
+    <div class="todoConteudo">
+        <!-- Cabeçalho com imagens decorativas -->
+        <header class="imagens">
+            <img src="img/cupcake.png" alt="cupcakes da kuromi" height="200px" width="200px">
+            <img src="img/briga.png" alt="cupcakes brigando" height="200px" width="200px">
+            <img src="img/cinamonroll.png" alt="cinamonroll parando a briga" height="200px" width="200px">
+        </header>
+        <main>
+            <!-- Vídeo e formulário lado a lado -->
+            <div class="videoEForms">
+                <video class="video" src="/video/video.mp4" controls width="400px" height="400px" poster="img/foto_video.png"></video>
+                <div>
+                    <form class="formulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome"><br><br>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email"><br><br>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem"></textarea><br><br>
+                        <input type="submit" value="Enviar" class="botao">
+                        <!-- Áudio com controles -->
+                        <audio controls class="audio">
+                            <source src="/audio/audio.mp3" type="audio/mp3">
+                            <source src="/audio/audio2.ogg" type="audio/ogg">
+                            O seu navegador não suporta audio
+                        </audio>
+                    </form>
+                </div>
+            </div>
+            <!-- Listas e tabela lado a lado -->
+            <div class="listaETabela">
+                <ol class="lista">
+                    <li>Maçã</li>
+                    <li>Uva</li>
+                    <li>Melancia</li>
+                </ol>
+                <ul class="lista">
+                    <li>Laranja</li>
+                    <li>Mamão</li>
+                    <li>Romã</li>
+                </ul>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome:</th>
+                            <th>Altura:</th>
+                            <th>Peso:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hello Kitty</td>
+                            <td>Cinco maçãs</td>
+                            <td>Três maçãs</td>
+                        </tr>
+                        <tr>
+                            <td>Cinamonroll</td>
+                            <td>21,5 cm</td>
+                            <td>59 g</td>
+                        </tr>
+                        <tr>
+                            <td>Kuromi</td>
+                            <td>20 cm</td>
+                            <td>100 g</td>
+                        </tr>
+                        <tr>
+                            <td>Keroppi</td>
+                            <td>2 pés</td>
+                            <td>1 kg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Introdução e destaques -->
+            <p id="introducao">Bem vindo ao site :)</p>
+            <p class="destaque">Pra comer um cupcake sem se sujar você tem que rosquear a parte de baixo e colocar em cima do glacê pra virar um sanduíche.</p>
+            <p class="destaque">Ninjas comem macarrão.</p>
+            <!-- Div com informações dos Backyardigans -->
+            <div class="estiloDeDiv">
+                <h3>Backyardigans</h3>
+                <p>O Pablo é o melhor personagem.</p>
+                <p>O melhor episódio é o de fazer chá.</p>
+            </div>
+            <!-- Links do rodapé -->
+            <footer class="links">
+                <a href="https://www.google.com">Google</a>
+                <a href="https://longdogechallenge.com">
+                    <img src="img/pucca-hellokitty.png" alt="pucca e hello kitty" width="200px" height="200px">
+                </a>
+                <a href="" target="_blank">Blank</a>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
